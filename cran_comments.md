@@ -2,6 +2,11 @@
 
 ### Testing
 
+Submission 3
+
+- added cran_comments.md to the .Rbuildignore
+- moved docs out of top level
+
 Submission 2
 
 - Removed README.html
