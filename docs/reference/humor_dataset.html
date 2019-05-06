@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>makeRadlibs — makeRadlibs • radlibs</title>
+<title>A list of English words with the "humor ratings" attached. — humor_dataset • radlibs</title>
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -30,9 +30,11 @@
 
 
 
-<meta property="og:title" content="makeRadlibs — makeRadlibs" />
+<meta property="og:title" content="A list of English words with the "humor ratings" attached. — humor_dataset" />
 
-<meta property="og:description" content="makeRadlibs" />
+<meta property="og:description" content="A dataset compiled by Tomas Englethaler for his research on humor.
+https://github.com/tomasengelthaler/HumorNorms
+Please visit his page for more details on the methodology used to score words." />
 <meta name="twitter:card" content="summary" />
 
 
@@ -97,51 +99,56 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>makeRadlibs</h1>
+    <h1>A list of English words with the "humor ratings" attached.</h1>
     
-    <div class="hidden name"><code>makeRadlibs.Rd</code></div>
+    <div class="hidden name"><code>humor_dataset.Rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>makeRadlibs</p>
+    <p>A dataset compiled by Tomas Englethaler for his research on humor.
+https://github.com/tomasengelthaler/HumorNorms
+Please visit his page for more details on the methodology used to score words.</p>
     
     </div>
 
-    <pre class="usage"><span class='fu'>makeRadlibs</span>(<span class='no'>phrase</span>, <span class='kw'>wordset</span> <span class='kw'>=</span> <span class='fl'>NA</span>)</pre>
-    
-    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
-    <table class="ref-arguments">
-    <colgroup><col class="name" /><col class="desc" /></colgroup>
-    <tr>
-      <th>phrase</th>
-      <td><p>String including any number of the words noun, verb, adjective, adverb, plural, or interjection</p></td>
-    </tr>
-    <tr>
-      <th>wordset</th>
-      <td><p>Data table of your choosing with columns "word" and "pos" at the minimum. Preferably all lowercase.</p></td>
-    </tr>
-    </table>
-    
-    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
+    <pre class="usage"><span class='fu'><a href='https://www.rdocumentation.org/packages/utils/topics/data'>data</a></span>(<span class='no'>humor_dataset</span>)</pre>
+        
+    <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>New string replacing the keywords with alternatives. Hopefully funny.</p>
+    <p>A data frame with 4997 rows and 16 variables:</p><dl class='dl-horizontal'>
+  <dt>word</dt><dd><p>string of the actual word</p></dd>
+  <dt>mean</dt><dd><p>mean of humor rating across all audiences</p></dd>
+  <dt>mean_F</dt><dd><p>mean of humor rating (women)</p></dd>
+  <dt>mean_M</dt><dd><p>mean of humor rating (men)</p></dd>
+  <dt>mean_old</dt><dd><p>mean of humor rating (old)</p></dd>
+  <dt>mean_young</dt><dd><p>mean of humor rating (young)</p></dd>
+  <dt>n</dt><dd><p>audience size</p></dd>
+  <dt>n_F</dt><dd><p>audience size (women)</p></dd>
+  <dt>n_M</dt><dd><p>audience size (men)</p></dd>
+  <dt>n_old</dt><dd><p>audience size (old)</p></dd>
+  <dt>n_young</dt><dd><p>audience size (young)</p></dd>
+  <dt>sd</dt><dd><p>sd of humor rating across all audiences</p></dd>
+  <dt>sd_F</dt><dd><p>sd humor rating (women)</p></dd>
+  <dt>sd_M</dt><dd><p>sd of humor rating (men)</p></dd>
+  <dt>sd_old</dt><dd><p>sd humor rating (old)</p></dd>
+  <dt>sd_young</dt><dd><p>sd of humor rating (young)</p></dd>
+    </dl>
+    
+    <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
+
+    <p><a href='https://github.com/tomasengelthaler/HumorNorms'>https://github.com/tomasengelthaler/HumorNorms</a></p>
     
 
-    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><span class='co'># NOT RUN {</span>
-<span class='fu'>makeRadlibs</span>(<span class='st'>"not sure if i should verb or verb because its an adjective noun"</span>)
-<span class='co'># }</span></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
-      <li><a href="#arguments">Arguments</a></li>
       
-      <li><a href="#value">Value</a></li>
-      
-      <li><a href="#examples">Examples</a></li>
-    </ul>
+      <li><a href="#format">Format</a></li>
+
+      <li><a href="#source">Source</a></li>
+          </ul>
 
   </div>
 </div>

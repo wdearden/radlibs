@@ -4,7 +4,7 @@
 # RadLibs
 
 Welcome! This is a small, fun package. Remember MadLibs from childhood roadtrips? This is something of 
-a parody of that, updated a bit.
+a parody of that, updated a bit. [To see the fullest documentation, visit https://skirmer.github.io/radlibs/.](https://skirmer.github.io/radlibs/)
 
 To get started immediately, you can use the base function: `makeRadlibs()`. Just pass a string that
 includes any number of the following words, and it will fill in something (hopefully) funny!
