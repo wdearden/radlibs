@@ -11,7 +11,7 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{makeRadlibs("not sure if i should verb or verb because its an adjective noun")}
+#' makeRadlibs("not sure if i should verb or verb because its an adjective noun")
 makeRadlibs <- function(phrase, wordset = NA) {
   if (is.na(wordset)) {
     wordset <- radlibs::humor_dataset

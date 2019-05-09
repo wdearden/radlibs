@@ -6,8 +6,8 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{newwords <- data.frame(word = c("cat", "green", "slowly"))
-#' POSTagger(newwords)}
+#' newwords <- data.frame(word = c("cat", "green", "slowly"))
+#' POSTagger(newwords)
 POSTagger <- function(wordDF) {
   wordset <- lexicon::grady_pos_feature(lexicon::hash_grady_pos)
   taggedDF <- merge(wordDF, wordset, by = "word", all.x = TRUE)
