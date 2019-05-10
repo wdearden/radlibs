@@ -69,7 +69,8 @@ PS: download `spongebob` or `cowsay` from CRAN to make things extra fun!
 
 ## Installing
 
-We aren't on CRAN yet, but it's in the works. For the moment, `install_github("skirmer/radlibs")` should get you everything!
+Radlibs is on CRAN! `install.packages("radlibs")` will get you the official version.
+For the development version, `install_github("skirmer/radlibs")` is the way to go.
 
 ## Credits
 
